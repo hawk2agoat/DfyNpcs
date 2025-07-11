@@ -1,0 +1,4 @@
+name: DfyNpcs
+version: '${project.version}'
+main: me.dungeonfy.dfynpcs.Main
+api-version: '1.21'
