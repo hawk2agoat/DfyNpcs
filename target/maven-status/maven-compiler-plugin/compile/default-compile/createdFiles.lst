@@ -1,2 +1,3 @@
-me\dungeonfy\dfynpcs\utils\Npc.class
+me\dungeonfy\dfynpcs\commands\SpawnNpcCommand.class
 me\dungeonfy\dfynpcs\Main.class
+me\dungeonfy\dfynpcs\utils\DfyNpc.class

@@ -9,8 +9,8 @@ public class DfyNpc {
     private final Location loc;
     private String name;
     private EntityType type;
-    private boolean sentient = false;
-    private boolean invulnerable = false;
+    //private boolean sentient = false;
+    //private boolean invulnerable = false;
     private Consumer<LivingEntity> customizer;
 
     public DfyNpc(Location loc) {
@@ -27,7 +27,7 @@ public class DfyNpc {
         return this;
     }
 
-    public DfyNpc setSentience(Boolean sentience) {
+    /*public DfyNpc setSentience(Boolean sentience) {
         this.sentient = sentience;
         return this;
     }
@@ -35,7 +35,7 @@ public class DfyNpc {
     public DfyNpc setInvulnerability(Boolean invulnerable) {
         this.invulnerable = invulnerable;
         return this;
-    }
+    }*/
 
     public DfyNpc customizer(Consumer<LivingEntity> consumer) {
         this.customizer = consumer;
@@ -48,8 +48,10 @@ public class DfyNpc {
             entity.setCustomName(name);
             entity.setCustomNameVisible(true);
         }
-        entity.setAI(sentient);
-        entity.setInvulnerable(invulnerable);
+        entity.setAI(false);
+        entity.setInvulnerable(true);
+        entity.setPersistent(true);
+        entity.setCanPickupItems(false);
         return entity;
     }
 }

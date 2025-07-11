@@ -2,3 +2,7 @@ name: DfyNpcs
 version: '1.0-SNAPSHOT'
 main: me.dungeonfy.dfynpcs.Main
 api-version: '1.21'
+author: staddr
+commands:
+  spawnNpc:
+    description: spawns a test npc
